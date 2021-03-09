@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_700"
+    >
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="198dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107">
+
+        <TextView
+            android:id="@+id/latitudedisplayer"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:text="The Latitude:"
+            android:textColor="#D63333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/longitudedisplayer"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:text="The Longitude:"
+            android:textColor="#D63333"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="255dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923">
+
+        <TextView
+            android:id="@+id/streetaddressdisplayer"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="The Address:"
+            android:textColor="#D63333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/distancedisplayer"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:text="The Distance(Miles): "
+            android:textColor="#D63333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timedisplayer"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Time:"
+            android:textColor="#D63333"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="178dp"
+        android:layout_height="78dp"
+        android:text="Reset Button      (For Distance, and Time)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
